@@ -1,0 +1,24 @@
+{
+  "name": "router-panel-remote",
+  "version": "1.0.0",
+  "description": "Thanks to this application you can access to control panel of your router.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antoniomuso/router-panel-remote.git"
+  },
+  "keywords": [
+    "router",
+    "remote",
+    "panel"
+  ],
+  "author": "AntonioMuso",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antoniomuso/router-panel-remote/issues"
+  },
+  "homepage": "https://github.com/antoniomuso/router-panel-remote#readme"
+}
