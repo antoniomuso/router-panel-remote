@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 const commandLine = require('command-line-args')
-//const proxy = require('./bin/lib/proxy.js')
-const proxy = require('./bin/lib/proxy-redbird.js')
+const proxy = require('./bin/lib/proxy.js')
+//const proxy = require('./bin/lib/proxy-redbird.js')
 
 
 const optionDefinitions = [
