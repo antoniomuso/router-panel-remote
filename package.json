@@ -27,5 +27,6 @@
   "dependencies": {
     "command-line-args": "^4.0.7",
     "http-proxy": "^1.16.2"
-  }
+  },
+  "preferGlobal": true
 }

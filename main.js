@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const commandLine = require('command-line-args')
 const proxy = require('./bin/lib/proxy.js')
 
@@ -14,7 +16,7 @@ const options = commandLine(optionDefinitions)
 
 if (options.serverMode) {
     if (!options.serverPort) throw new Error('--serverPort must be specifie')
-    proxy(options.router, options.serverPort)
+    proxy(options.router, options.serverPort)   
     console.log('server mode active')
 } else {
     if (!options.serverPort) throw new Error('--serverPort must be specifie')
