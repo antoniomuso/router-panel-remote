@@ -1,6 +1,6 @@
 {
   "name": "router-panel-remote",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Thanks to this application you can access to control panel of your router.",
   "main": "main.js",
   "scripts": {
@@ -26,7 +26,8 @@
   "homepage": "https://github.com/antoniomuso/router-panel-remote#readme",
   "dependencies": {
     "command-line-args": "^4.0.7",
-    "http-proxy": "^1.16.2"
+    "http-proxy": "^1.16.2",
+    "redbird": "^0.7.0"
   },
   "preferGlobal": true
 }

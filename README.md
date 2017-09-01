@@ -5,7 +5,7 @@ Thanks to this application you can access to control panel of your router in rem
 `npm install router-panel-remote -g`
 ## Use application
 ```
-On cliente:
+On client:
   router-panel-remote --server [Ip server] --serverPort [port of server] --clientPort [default 4400]
   
 On server:
@@ -17,7 +17,7 @@ On server:
 On Server: 
   router-panel-remote --serverMode --serverPort 5000
   
-On Cliente:
+On Client:
   sudo router-panel-remote --server http://server.com --serverPort 5000 --clientPort 80
   
   

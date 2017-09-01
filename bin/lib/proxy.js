@@ -2,7 +2,8 @@ const http = require('http')
 const httpProxy = require('http-proxy')
 module.exports = function (targetUrl, portListen) {
     var options = {
-        target: targetUrl
+        target: targetUrl,
+        ws: true
     }
     var proxy = httpProxy.createProxyServer(options);
 
