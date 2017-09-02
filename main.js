@@ -12,16 +12,16 @@ const optionDefinitions = [
     { name: 'clientPort', alias: 'p', type:Number, defaultValue: 4400 },
     { name: 'serverPort', type: Number }
   ]
-
 const options = commandLine(optionDefinitions)
 
 
 if (options.serverMode) {
     if (!options.serverPort) throw new Error('--serverPort must be specifie')
     proxy(options.router, options.serverPort)   
-    console.log('server mode active')
+    console.log(`Server listen on port: ${options.serverPort} in server mode`)
 } else {
     if (!options.serverPort) throw new Error('--serverPort must be specifie')
     if (!options.server) throw new Error('In not server mode the ip of server must be specifie')
     proxy(options.server +`:${options.serverPort}` ,options.clientPort)
+    console.log(`Server listen on port: ${options.clientPort} in client mode`)
 }

@@ -1,13 +1,10 @@
-const http = require('http')
-const httpProxy = require('http-proxy')
-module.exports = function (targetUrl, portListen) {
-    var options = {
-        target: targetUrl,
-        ws: true
-    }
-    var proxy = httpProxy.createProxyServer(options);
+const url = require('url')
 
-    http.createServer((req, res) => {
-        proxy.web(req, res)
-    }).listen(portListen)
+module.exports = function (targetUrl, portListen) {
+    var urlParse = url.parse(targetUrl) 
+    if (urlParse.protocol === 'https:') {
+        require('./proxy-https.js')(targetUrl, portListen)
+    } else if (urlParse.protocol === 'http:') {
+        require('./proxy-http.js')(targetUrl, portListen)
+    }
 }
